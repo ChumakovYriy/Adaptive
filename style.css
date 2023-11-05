@@ -211,7 +211,6 @@ body {
         margin: -111px 0px 0px 0px;
     }
     .services__body {
-        display: flex;
         display: block;
         flex: 0 1 33.333%;
         margin: 0px -15px -30px;
