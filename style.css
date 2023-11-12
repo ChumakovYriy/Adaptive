@@ -15,6 +15,7 @@ ol,
 ul,
 li {
     list-style: none;
+    padding-inline-start: 0;
 }
 img {
     vertical-align: top;
@@ -45,7 +46,9 @@ body {
     /* _____________________________________________________________ */
     ._container {
         max-width: 1046px;
+        padding: 0px 15px;
         margin: 0 auto;
+        box-sizing: content-box;
     }
 /* __________________ШАПКА__________________________________________ */
 .header {
@@ -68,19 +71,41 @@ body {
 .header__menu {
     margin: 0px 0px 0px 133px;
 }
+@media (max-width: 992px) {
+    .header__menu {
+        margin: 0px 0px 0px 80px;
+    }
+}
+@media (max-width: 767px) {
+    .header__menu {
+        margin: 0px 0px 0px 40px;
+    }
+}
+@media (max-width: 479px) {
+    .header__menu {
+        margin: 0px 0px 0px 20px;
+    }
+}
 .menu {
+    padding: 5px 0px;
 }
 .menu__list {
+    flex-wrap: wrap;
     display: flex;
 }
 .menu__item {
-    margin: 0px 0px 0px 21px;
+    
 }
-.menu__item:not(:last-child){
+.menu__item:not(:last-child) {
     margin: 0px 21px 0px 0px;
 }
 .menu__link {
     color: #737373;
     line-height: calc(24 / 14 * 100%);
     font-weight: 600;
+}
+@media (max-width: 479px) {
+    .menu__link {
+        font-size: 18px;
+    }
 }
